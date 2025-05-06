@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Scraper Features</title>
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #007bff;
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        li:hover {
+            background-color: #f0f8ff;
+            transform: translateY(-5px);
+        }
+
+        .feature-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .divider {
+            height: 1px;
+            background-color: #ddd;
+            margin: 15px 0;
+        }
+
+        /* Style for small screens */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            li {
+                padding: 15px;
+            }
+
+            .description {
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Web Scraper Features</h1>
+        <ul>
+            <li>
+                <span class="feature-title">Customizable Search</span>
+                <span class="description">The scraper takes user input for search keywords and generates a URL, ensuring it can be adapted for various queries on Al Jazeera.</span>
+            </li>
+            <div class="divider"></div>
+            <li>
+                <span class="feature-title">Handles Multi-word Keywords</span>
+                <span class="description">Automatically encodes spaces as %20 for multi-word search queries, ensuring seamless URL formation like "tariffs%20china".</span>
+            </li>
+            <div class="divider"></div>
+            <li>
+                <span class="feature-title">"Show More" Handling</span>
+                <span class="description">The scraper intelligently detects and clicks the "Show More" button to load additional articles, continuing to scrape as long as new content is available.</span>
+            </li>
+            <div class="divider"></div>
+            <li>
+                <span class="feature-title">Article Scraping</span>
+                <span class="description">For each article, the scraper extracts the title, content, article URL, and the original search keyword for precise documentation.</span>
+            </li>
+            <div class="divider"></div>
+            <li>
+                <span class="feature-title">User-Agent Rotation</span>
+                <span class="description">To prevent being blocked, the scraper rotates user-agents with each article visit, mimicking human browsing patterns.</span>
+            </li>
+            <div class="divider"></div>
+            <li>
+                <span class="feature-title">Random Delays</span>
+                <span class="description">To avoid rapid requests and reduce detection, the scraper waits randomly between 3-5 seconds between article visits.</span>
+            </li>
+            <div class="divider"></div>
+            <li>
+                <span class="feature-title">CSV Output</span>
+                <span class="description">The scraper efficiently saves all scraped data (article title, content, URL, and search keyword) into a CSV file, appending new data or creating the file if it doesn't exist.</span>
+            </li>
+            <div class="divider"></div>
+            <li>
+                <span class="feature-title">Headless Browser</span>
+                <span class="description">The scraper uses Selenium with a headless browser for executing dynamic JavaScript and loading full content from the search results page.</span>
+            </li>
+            <div class="divider"></div>
+            <li>
+                <span class="feature-title">Error Handling</span>
+                <span class="description">Logical print statements guide the user through the scraping process, providing feedback on each action and any issues encountered.</span>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>
