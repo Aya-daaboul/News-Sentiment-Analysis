@@ -102,8 +102,8 @@ def main():
         print("⚠️ No articles found. Exiting.")
         return
 
-    file_exists = os.path.isfile('aljazeera_articles.csv')
-    with open('aljazeera_articles.csv', 'a', newline='', encoding='utf-8') as csvfile:
+    file_exists = os.path.isfile(f'aljazeera_articles_{keyword}.csv')
+    with open(f'aljazeera_articles_{keyword}.csv', 'a', newline='', encoding='utf-8') as csvfile:
         fieldnames = ['Keyword Searched', 'Title', 'Content', 'URL']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
@@ -123,7 +123,7 @@ def main():
                 print("⚠️ Failed to scrape article.")
             time.sleep(random.randint(3, 5))
 
-    print("🎉 All done. Articles saved to aljazeera_articles.csv")
+    print(f"🎉 All done. Articles saved to aljazeera_articles_{keyword}.csv")
 
 if __name__ == "__main__":
     main()

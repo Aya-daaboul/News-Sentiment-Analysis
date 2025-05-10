@@ -5,7 +5,7 @@ print("✅ Loading sentiment analysis pipeline...")
 sentiment_pipeline = pipeline("sentiment-analysis")
 
 print("✅ Reading CSV file...")
-df = pd.read_csv(r"aljazeera_articles.csv")
+df = pd.read_csv(r"aljazeera_articles_tariffs.csv") #adjust here
 
 # Ensure Content is treated as text
 print("✅ Converting 'Content' to string type...")
@@ -33,6 +33,6 @@ def get_sentiment(text):
 df[['Sentiment', 'Confidence']] = df['Content'].apply(get_sentiment)
 
 print("💾 Saving results to 'aljazeera_articles_with_sentiment.csv'...")
-df.to_csv("aljazeera_articlesss_with_sentiment.csv", index=False)
+df.to_csv("aljazeera_articles_with_sentiment_Tariffs.csv", index=False)
 
 print("🎉 Done! CSV with sentiment saved successfully.")
