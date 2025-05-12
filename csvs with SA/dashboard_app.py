@@ -13,7 +13,7 @@ app = Dash(__name__)
 app.title = "Sentiment Dashboard"
 
 # Folder and CSVs
-csv_folder = r"csvs with SA"
+csv_folder = r"C:\Users\user\Desktop\google scraping\csvs with SA"
 csv_files = [f for f in os.listdir(csv_folder) if f.endswith('.csv')]
 
 # Layout
