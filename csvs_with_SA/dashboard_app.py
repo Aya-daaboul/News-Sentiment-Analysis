@@ -17,7 +17,7 @@ st.title("Sentiment Dashboard")
 # Data folder (ensure this is correct path)
 csv_folder = os.path.join(os.getcwd(), "csvs_with_sa")
 
-
+#check again
 # Check if folder exists and has CSV files
 if not os.path.exists(csv_folder):
     st.error("Data folder does not exist.")
