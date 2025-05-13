@@ -12,7 +12,7 @@ csv_files = [f for f in os.listdir(csv_folder) if f.endswith('.csv')]
 app = Dash(__name__)
 
 app.layout = html.Div([
-    html.H1("Choose A Keyword", style={'textAlign': 'center'}),
+    html.H1("Gawgel (the summarized way)", style={'textAlign': 'center'}),
 
     dcc.Dropdown(
         id='csv-selector',
