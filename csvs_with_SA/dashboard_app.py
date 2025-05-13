@@ -15,7 +15,7 @@ st.set_page_config(page_title="Sentiment Dashboard", layout="centered")
 st.title("Sentiment Dashboard")
 
 # Data folder (ensure this is correct path)
-csv_folder = os.path.join(os.getcwd(), "csvs_with_SA")
+csv_folder = os.path.join(os.getcwd(), "csvs_with_sa")
 
 
 # Check if folder exists and has CSV files
