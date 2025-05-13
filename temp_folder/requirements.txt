@@ -3,3 +3,5 @@ streamlit
 plotly
 wordcloud
 scikit-learn
+transformers
+pandas
