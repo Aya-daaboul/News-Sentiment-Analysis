@@ -8,7 +8,7 @@ st.set_page_config(page_title="Gawgel (the summarized way)", layout="centered")
 st.title("Gawgel (the summarized way)")
 
 # CSV folder path
-csv_folder = r"C:\Users\user\Desktop\google scraping\temp_folder"
+csv_folder = os.path.dirname(__file__)
 csv_files = [f for f in os.listdir(csv_folder) if f.endswith('.csv')]
 
 # Select a CSV file
